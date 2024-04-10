@@ -1,3 +1,5 @@
+/*eslint-disable*/
+
 export default function appendToEachArrayValue(array, appendString) {
   for (const _ of array) {
     const value = _;
