@@ -1,13 +1,13 @@
 /*eslint-disable*/;
 
 export default function taskBlock(trueOrFalse) {
-  var task = false;
-  var task2 = true;
+  var task3 = false;
+  var task4 = true;
 
   if (trueOrFalse) {
-    let task = true;
-    let task2 = false;
+    var task = true;
+    var task2 = false;
   }
 
-  return [task, task2];
+  return [task3, task4];
 }
