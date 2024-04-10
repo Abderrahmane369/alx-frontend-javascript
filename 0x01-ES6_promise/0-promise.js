@@ -1,5 +1,5 @@
-/*eslint-disable*/
-
 export default function getResponseFromAPI() {
-  return Promise.resolve("s")
-}
+    return new Promise((resolve, reject) => {
+      // Your asynchronous code here
+    });
+  }
