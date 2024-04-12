@@ -1,14 +1,12 @@
-/*eslint-disable*/
 export default function getFullResponseFromAPI(success) {
-    return new Promise((res, rej) => {
-        if (success) {
-            res({
-                status: 200,
-                body: 'Success',
-            });
-        } else {
-            rej(Error("The fake API is not working currently"));
-        }
-
-    })
+  return new Promise((resolve, reject) => {
+    if (success) {
+      resolve({
+        status: 200,
+        body: 'Success',
+      });
+    } else {
+      reject(new Error('The fake API is not working currently'));
+    }
+  });
 }
