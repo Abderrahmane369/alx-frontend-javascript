@@ -8,7 +8,8 @@ export default class Airport {
   }
 
   [ util.inspect.custom ]() {
-    return `Airport [${this._code}] ${this}`;
+    const {_name, _code} = this;
+    return `Airport [${this._code}] ${JSON.stringify({_name, _code})}`;
   }
   toString () {
     return `[Object ${this._code}]`;
