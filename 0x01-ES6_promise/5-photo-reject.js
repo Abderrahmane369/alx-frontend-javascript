@@ -1,5 +1,5 @@
 /*eslint-disable*/
 
-export default function uploadPhoto (_) {
-  return Promise.reject(`${_} cannot be processed `);
+export default function uploadPhoto (filename) {
+  return Promise.reject(`${filename} cannot be processed `);
 };
