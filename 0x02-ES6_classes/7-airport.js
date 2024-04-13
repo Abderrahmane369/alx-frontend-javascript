@@ -12,6 +12,6 @@ export default class Airport {
     return `Airport [${this._code}] ${JSON.stringify({_name, _code})}`;
   }
   toString () {
-    return `[Object ${this._code}]`;
+    return `[object ${this._code}]`;
   }
 };
