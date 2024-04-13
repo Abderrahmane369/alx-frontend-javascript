@@ -1,9 +1,16 @@
+/*eslint-disable*/
+import util from 'util';
+
 export default class Airport {
-  constructor(name, code) {
+  constructor (name, code) {
     this._name = name;
     this._code = code;
   }
-  toString() {
+
+  [ util.inspect.custom ]() {
     return `Airport [${this._code}] ${this}`;
   }
-}
+  toString () {
+    return `[Object ${this._code}]`;
+  }
+};
