@@ -1,18 +1,15 @@
-/*eslint-disable*/
-import {uploadPhoto, createUser} from './utils'
+import { uploadPhoto, createUser } from "./utils";
 
 export default async function asyncUploadUser() {
-    try {
+     try {
         return {
             photo: await uploadPhoto(),
             create: await createUser()
-        }
-    }
-
-    catch {
+        };
+    } catch (err) {
         return {
             photo: null,
-            user: null,
-          }
+            user: null
+        };
     }
 }
