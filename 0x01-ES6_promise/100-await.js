@@ -5,8 +5,8 @@ import {uploadPhoto, createUser} from 'utils'
 export default async function asyncUploadUser() {
     try {
         return {
-            photo: uploadPhoto(),
-            create: createUser()
+            photo: await uploadPhoto(),
+            create: await createUser()
         }
     }
 
