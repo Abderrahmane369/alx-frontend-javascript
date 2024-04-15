@@ -1,9 +1,13 @@
 /*eslint-disable*/
-export default function cleanSet(set, start) {
-    if (!start) return "";
-
-    return [...set]
-        .filter(_ => _.substr(0, start.length) == start)
-        .map(_ => _.substr(start.length))
-        .join("-");
-}
+export default function cleanSet(set, startString) {
+    if (typeof startString !== 'string' || startString === '') {
+      return '';
+    }
+  
+    const result = [...set]
+      .filter(item => item.startsWith(startString))
+      .map(item => item.slice(startString.length))
+      .join('-');
+  
+    return result;
+  }
