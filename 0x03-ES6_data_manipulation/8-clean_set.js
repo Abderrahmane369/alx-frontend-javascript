@@ -1,6 +1,6 @@
 /*eslint-disable*/
 export default function cleanSet(set, startString) {
-    if (typeof startString !== 'string' || startString === '' || typeof set !== 'set') {
+    if (typeof startString !== 'string' || startString === '' || typeof startString !== 'set') {
       return '';
     }
   
