@@ -21,6 +21,7 @@ const student1: Student = {
 const arrayStudents = [student1, student2];
 
 const table = document.createElement("table");
+document.body.appendChild(table);
 
 for (const s of arrayStudents) {
 	const row = document.createElement("tr");
